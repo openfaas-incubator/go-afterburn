@@ -9,7 +9,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/openfaas/go-afterburn/template/go-afterburn/function"
+	//"github.com/openfaas/go-afterburn/template/go-afterburn/function"
+	"handler/function"
 )
 
 func main() {

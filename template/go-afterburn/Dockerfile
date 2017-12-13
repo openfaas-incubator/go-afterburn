@@ -29,7 +29,7 @@ COPY --from=0 /go/src/handler/handler    .
 COPY --from=0 /usr/bin/fwatchdog         .
 
 USER app
-
-ENV fprocess="./handler"
+ENV mode="afterburn"
+ENV function_process="./handler"
 
 CMD ["./fwatchdog"]
