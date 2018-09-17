@@ -2,7 +2,7 @@ FROM golang:1.9.2-alpine3.6
 
 RUN apk add --no-cache curl && \
     curl -sfL \
-    https://github.com/openfaas-incubator/of-watchdog/releases/download/0.0.4/of-watchdog > /usr/bin/fwatchdog && \
+    https://github.com/openfaas-incubator/of-watchdog/releases/download/0.4.0/of-watchdog > /usr/bin/fwatchdog && \
     chmod +x /usr/bin/fwatchdog
 
 WORKDIR /go/src/handler
